@@ -29,23 +29,23 @@
 						<ul class="stats">
 							<li class="stats-item">
 								<b class="stats-title">Tweets</b>
-								<b class="stats-count">1</b>
+								<b class="stats-count" id="tweetsCounter"></b>
 							</li>
 							<li class="stats-item">
 								<b class="stats-title">Readable</b>
-								<b class="stats-count">51</b>
+								<b class="stats-count">0</b>
 							</li>
 							<li class="stats-item">
 								<b class="stats-title">Readers</b>
-								<b class="stats-count">151</b>
+								<b class="stats-count" id="counter">0</b>
 							</li>
 							<li class="stats-item">
 								<b class="stats-title">Like</b>
-								<b class="stats-count">661</b>
+								<b class="stats-count">0</b>
 							</li>
 							<li class="stats-item">
 								<b class="stats-title">Moments</b>
-								<b class="stats-count">11</b>
+								<b class="stats-count">0</b>
 							</li>
 						</ul>
 					</div>
@@ -55,36 +55,22 @@
 			<div class="col-md-8">
 				<div class="card mb-3">
 					<div class="card-body">
-						<form>
+						<form id="postNewTweet" class="main_form">
 							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Anything new?">
+								<input type="text" class="form-control" id="tweetText" placeholder="Anything new?" required>
 							</div>
-							<button type="submit" class="btn btn-primary">Tweet</button>
+							<div class="buttons_form">
+								<button type="submit" class="btn btn-primary">Tweet</button>
+								<button type="button" class="btn btn-primary" id="btn-subscribe">Subcribe</button>
+								<div id="notifyHolder" class="notify-holder sm"></div>
+							</div>
 						</form>
 					</div>
 				</div>
-				<div class="card tweet-card">
+				<div class="card card-title-only">
 					<div class="h4 mb-0">Tweet's User</div>
 				</div>
-				<div class="card tweet-card">
-					<div class="tweet-date">07/09/2018</div>
-					<div class="tweet-text">
-						<p>The government is watching us,be careful.</p>
-					</div>
-				</div>
-				<div class="card tweet-card">
-					<div class="tweet-date">06/09/2018</div>
-					<div class="tweet-text">
-						<p>Resistance is power, Pasha we're with you!</p>
-					</div>
-				</div>
-				<div class="card tweet-card">
-					<div class="tweet-date">05/09/2018</div>
-					<div class="tweet-text">
-						<p>I found a good site ->
-							<a href="https://getbootstrap.com">Bootstrap</a>
-						</p>
-					</div>
+				<div id="tweetsList">
 				</div>
 				<footer class="footer">
 					<p class="footer-copyright">
@@ -101,6 +87,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	    crossorigin="anonymous"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
