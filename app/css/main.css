@@ -1,8 +1,106 @@
 body {
-  background-color: #0096FF;
-  color: #FFFFFF;
-  font-family: sans-serif;
+  background-color: #e6ecf0;
+  font-family: 'Noto Sans', sans-serif;
+  padding-top: 20px;
 }
-h1 {
-  font-size: 32px;
+.profile-background {
+  height: 120px;
+  background: url("../img/bg.jpg") center no-repeat;
+  background-size: cover;
+}
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 100px;
+  border: 4px solid #fff;
+  background-color: #fff;
+  margin: -50px auto 0 auto;
+}
+.profile-avatar img {
+  max-width: 100%;
+  height: auto;
+}
+.stats {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  color: #657786;
+  list-style-type: none;
+  padding: 0 15px 0 15px;
+}
+.stats-title {
+  font-size: 14px;
+}
+.stats-count {
+  color: #00a2ff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tweet-card {
+  padding: 1.25rem;
+  border-radius: 0;
+  border-bottom: 0px;
+}
+.tweet-card:first-child {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.tweet-card:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.tweet-date {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.tweet-text p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.tweet-text a {
+  color: #1B95E0;
+}
+.font-size-small p {
+  font-size: 16px;
+}
+.font-size-normal p {
+  font-size: 20px;
+}
+.font-size-large p {
+  font-size: 24px;
+}
+.footer {
+  color: #8b949b;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  font-weight: 800;
+}
+.footer p {
+  line-height: 2;
+  padding-bottom: 16px;
+}
+.footer .fa-heart {
+  color: #ff0000;
+}
+.profile-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+}
+.profile-description {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  text-align: center;
 }

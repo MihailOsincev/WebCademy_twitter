@@ -1,12 +1,23 @@
-@backgroundColor: #0096FF;
-
+@backgroundColor: #e6ecf0;
 body {
 	background-color: @backgroundColor;
-	color: #FFFFFF;
-	font-family: sans-serif;
-
+	font-family: 'Noto Sans', sans-serif;
+	padding-top: 20px;
 }
 
-h1 {
-	font-size: 32px;
+@import "blocks/_profile.less";
+@import "blocks/_stats.less";
+@import "blocks/_tweet-card.less";
+@import "blocks/_footer.less";
+
+.profile-title {
+	font-size: 22px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.profile-description {
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	text-align: center;
 }
